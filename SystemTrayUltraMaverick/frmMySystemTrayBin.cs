@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SystemTrayUltraMaverick
 {
-    public partial class Form1 : Form
+    public partial class frmMySystemTrayBin : Form
     {
-        public Form1()
+        public frmMySystemTrayBin()
         {
             InitializeComponent();
         }
@@ -39,6 +39,17 @@ namespace SystemTrayUltraMaverick
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            notifyIcon1.ShowBalloonTip(1000, "Important notice", "Something important has come up. Click this to know more.", ToolTipIcon.Info);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1_Tick(sender, e);
         }
     }
 }

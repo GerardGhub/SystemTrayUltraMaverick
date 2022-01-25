@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SystemTrayUltraMaverick")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Real Time Notifications Madafacker")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("RDF")]
 [assembly: AssemblyProduct("SystemTrayUltraMaverick")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
